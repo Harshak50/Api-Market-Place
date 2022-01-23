@@ -1,6 +1,5 @@
 import "../../App.css";
 import "./Dashboard.css";
-import logo from "../../assets/cuvette.svg";
 import Banner from "./Banner";
 import Card from "../../components/Card/Card";
 import Navbar from "../../components/Navbar/Navbar"
