@@ -2,7 +2,8 @@ import "../../App.css";
 import "./Dashboard.css";
 import logo from "../../assets/cuvette.svg";
 import Banner from "./Banner";
-import Card from "./Card/Card";
+import Card from "../../components/Card/Card";
+import Navbar from "../../components/Navbar/Navbar"
 function Dashboard() {
   var cards = [
     {
@@ -56,10 +57,7 @@ function Dashboard() {
   ];
   return (
     <>
-      <div className="nav-bar">
-        <img alt="logo" src={logo} className="img"></img>
-        <button className="btn-1 btn">Login / Signup</button>
-      </div>
+    <Navbar/>
       <div className="dashboard">
         <Banner />
         <p>All APIs</p>
