@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
+.login {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.login-intro {
+  margin-top: 10%;
+font-size: 20px;
+}
+
+.form{
+  font-size: 16px;
+  padding: 20px 60px 20px 30px;
+  border-radius: 10px;
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+  border: 1.5px solid;
+  border-color: rgb(172, 172, 172);
+}
+.inputs {
+  margin: 10px;
+  border-radius: 5px;
+  border: 1px solid rgb(233, 233, 233);
+  padding: 8px;
+  width: 90%;
+}
+.login-btn {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  width: 97%;
+}
+.register-btn {
+  margin: 10px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  width: 35%;
+}

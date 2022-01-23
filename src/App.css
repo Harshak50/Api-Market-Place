@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+html,body{
+    font-family: 'Noto Sans', sans-serif;
+}
+.wrapper{
+    padding: 20px;
+}
+p{
+    font-weight: 500;
+}
+.btn-1{
+background-color: #142683;
+border-radius: 5px;
+color: white;
+border: 0;
+}
+.btn-2{
+    color: #142683;
+    border-radius: 5px;
+    background-color: white;
+    border: 2px solid;
+    border-color:  #142683;
+    }

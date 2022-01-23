@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+html,body{
+    margin: 0;
+    background-color: #fafafa;
+}
+.dashboard{
+    margin: 2% 3%;
+}
+.nav-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 60px;
+    margin: 0;
+    background-color:#fff;
+}
+.img{
+    display: inline;
+    width: 100px;
+    margin: auto 15px;
+    height: 50px;
+}
+.btn{
+margin: auto 15px;
+height: 40px;
+width: 110px;
+}
+.banner{
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    background-color: #c3e7fd;
+    justify-content: flex-start;
+}
+.img-1{
+height: 150px;
+}
+.semi-circle{
+    height: 150px;
+    width: 100px;
+    border-radius:  0 150px  150px 0;
+    background-color: #d3b4f6;
+}
+.api-ad{
+width: 100%;
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+margin: auto 20px;
+}
+.api-ad-txt{
+font-size:50px;
+color: #1e272e;
+font-family: 'Bebas Neue', cursive;
+}
+.api-ad-info-txt{
+    color: #00346e;
+    /* color:#566474 ; */
+    font-size: 26px;
+    display: inline;
+}
+.view-app{
+    margin: auto 15px;
+    height: 40px;
+    width: 110px;
+    color: #fff;
+    border: 0;
+    border-radius: 5px;
+    background-color: #1e272e;
+}
+.cards{
+    margin-left:5%;
+}
