@@ -1,6 +1,9 @@
+import Navbar from "../../../components/Navbar/Navbar";
 import "../Register/Register.css"
 export default function Register(){
 return(
+    <>
+    <Navbar login="true"></Navbar>
     <div className="registerform">
     <p>Please register your account</p>
 <form>
@@ -11,5 +14,6 @@ return(
      <button className="btn-1 register-btn inputs" type="submit">Register</button><br/>
 </form>
 </div>
+</>
 );
 }

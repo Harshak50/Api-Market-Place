@@ -56,7 +56,6 @@ function Dashboard() {
   ];
   return (
     <>
-    <Navbar/>
       <div className="dashboard">
         <Banner />
         <p>All APIs</p>

@@ -6,25 +6,7 @@ html,body{
 .dashboard{
     margin: 2% 3%;
 }
-.nav-bar{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    height: 60px;
-    margin: 0;
-    background-color:#fff;
-}
-.img{
-    display: inline;
-    width: 100px;
-    margin: auto 15px;
-    height: 50px;
-}
-.btn{
-margin: auto 15px;
-height: 40px;
-width: 110px;
-}
+
 .banner{
     border-radius: 10px;
     display: flex;
@@ -70,4 +52,24 @@ font-family: 'Bebas Neue', cursive;
 }
 .cards{
     margin-left:5%;
+} 
+/* navbar */
+.nav-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 60px;
+    padding-top: 10px;
+    background-color:#fff;
+}
+.img{
+    display: inline;
+    width: 100px;
+    margin: auto 15px;
+    height: 50px;
+}
+.btn{
+margin: auto 15px;
+height: 40px;
+width: 110px;
 }

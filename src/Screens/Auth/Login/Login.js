@@ -1,6 +1,9 @@
+import Navbar from "../../../components/Navbar/Navbar";
 import LoginForm from "./Loginform";
 export default function Login() {
-  return <div className="login">
+  return( <>
+ <Navbar login="true"></Navbar>
+  <div className="login">
       <div className="login-intro">
           <h2>Welcome to your <br></br>Dashboard</h2>
           <p>Your uploaded APIs will be<br></br>
@@ -10,5 +13,7 @@ export default function Login() {
       </div>
       <LoginForm></LoginForm>
 
-  </div>;
+  </div>
+  </>
+  );
 }
