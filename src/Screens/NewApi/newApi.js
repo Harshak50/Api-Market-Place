@@ -33,7 +33,7 @@ const onSubmitHandler = async(event)=>{
         "Content-type": "application/json",
     },
 };
-  const response = await axios.post("http://authjwtexpress.herokuapp.com/apis/createApi",{
+  const response = await axios.post("https://authjwtexpress.herokuapp.com/apis/createApi",{
     apiName:input.apiName,
     apiEndPoint:input.apiEndPoint,
     description:input.description,
