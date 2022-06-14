@@ -2,15 +2,14 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 60px;
+    height:80px;
     padding-top: 10px;
     background-color:#fff;
 }
 .img{
     display: inline;
     width: 100px;
-    margin: auto 15px;
-    height: 50px;
+    height: 70px;
 }
 
 .btn-row{

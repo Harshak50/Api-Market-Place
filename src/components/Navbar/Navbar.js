@@ -1,6 +1,6 @@
 import "./Navbar.css"
 import { useNavigate } from 'react-router-dom';
-import logo from "../../assets/cuvette.svg";
+import logo from "../../assets/logo.png";
 export default function Navbar(props) {
   var loginbtn ="";
    props.login ? loginbtn = "none": loginbtn = "block"

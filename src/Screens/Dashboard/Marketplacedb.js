@@ -2,7 +2,7 @@ import "../../App.css";
 import "./Dashboard"
 import "../Dashboard/Dashboard.css"
 import React, {useEffect } from "react";
-import logo from "../../assets/cuvette.svg"
+import logo from "../../assets/logo.png"
 import {Link} from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import Dashboard from "./Dashboard";
