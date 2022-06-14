@@ -1,27 +1,24 @@
 import "../../App.css";
-import "./Dashboard.css";
-import Banner from "./Banner";
+import "../MyApis/myApis.css"
 import axios from "axios";
 import Card from "../../components/Card/Card";
-
 import React, {useState, useEffect} from "react";
-function Dashboard() {
+function MyApis() {
   const[cards,setCards] = useState([])
   useEffect(()=>{
     const fetchData = async () =>{
-     const data = await axios.get("https://authjwtexpress.herokuapp.com/apis/fetchAll",{});
+     const data = await axios.get("https://authjwtexpress.herokuapp.com/apis/myApis/",{params:{"email":"kondapuramharsha@gmail.com"}});
       console.log(data.data)
       setCards(data.data);
     }
     fetchData();
   })
-
-
   return (
-    <>
-      <div className="dashboard">
-        <Banner />
-        <p>All APIs</p>
+     <>
+     <div  className="nav-bar">
+      <p className="main-label">My APIs</p>
+      </div>
+      <div className="my-apis">
         <div className="cards">
           {cards.map((e) => {
             return (
@@ -42,4 +39,4 @@ function Dashboard() {
   );
 }
 
-export default Dashboard;
+export default MyApis;

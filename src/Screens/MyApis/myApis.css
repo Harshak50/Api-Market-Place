@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+html,body{
+    margin: 0;
+    background-color: #fafafa;
+}
+.my-apis{
+    margin: 2% 3%;
+}
+
+.cards{
+    margin-left:5%;
+} 
+/* navbar */
+.nav-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 60px;
+    font-size: 18px;
+    padding: 20px 20px 0 20px;
+    background-color:#fff;
+}
+.main-label{
+    margin: auto;
+    color: #142683;
+}

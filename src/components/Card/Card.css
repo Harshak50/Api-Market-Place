@@ -11,11 +11,27 @@
   width: 100%;
 }
 .primary-text {
-  padding:0 5px;
+  padding:0 10px;
   color: #1e272e;
+  font-weight: 500;
+  margin: 5px 0px 5px 0px;
   font-size: 20px;
 }
 .secondary-text {
-    padding: 0 5px 15px 5px;
-  color: #566474;
+    padding: 0 5px 5px 10px;
+    color: #525f6d;
+    font-weight: 500;
+    margin: 0;
+    font-size: 14px;
+}
+.author{
+font-size: 14px;
+padding: 0 5px 0px 10px;
+}
+
+.copy-api{
+  margin:  0px 10px 20px 10px;
+  height: 30px;
+  width: 120px;
+  border: 1px solid;
 }
