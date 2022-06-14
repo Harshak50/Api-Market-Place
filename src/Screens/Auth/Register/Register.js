@@ -33,7 +33,7 @@ export default function Register() {
             };
             console.log(user);
             const { data } = await axios.post(
-                "http://authjwtexpress.herokuapp.com/users/register",
+                "https://authjwtexpress.herokuapp.com/users/register",
                 {
                     fname: user.fname,
                     lname: user.lname,

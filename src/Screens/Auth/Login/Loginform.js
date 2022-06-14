@@ -41,7 +41,7 @@ function LoginForm() {
         setUser({ user, loading: false });
         console.log(user);
         const { data } = await axios.post(
-          "http://authjwtexpress.herokuapp.com/users/login",
+          "https://authjwtexpress.herokuapp.com/users/login",
           {
             email: user.email,
             password: user.password,
