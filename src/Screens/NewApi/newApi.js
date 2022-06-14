@@ -13,7 +13,7 @@ const NewAPI = () => {
     description:"",
     author:"",
     public:false,
-    email:localStorage.getItem('userInfo'),
+    email:"",
     imageUrl:""
   })
 
@@ -39,11 +39,10 @@ const onSubmitHandler = async(event)=>{
     description:input.description,
     author:input.author,
     public:input.public,
-    email:localStorage.getItem('userInfo'),
+    email:input.email,
     imageUrl:input.imageUrl
   }, config);
   if(response){
-    alert(response);
     navigate('/myapis')
     setLoading(false);
   }
@@ -67,6 +66,7 @@ const onSubmitHandler = async(event)=>{
       <input type="text" placeholder='Public'onChange={onChangeInput} name='public' value={input.public} className='inputs' />
       <input type="text" placeholder='Author'onChange={onChangeInput} name='author' value={input.author} className='inputs' />
       <input type="text" placeholder='Image Url'onChange={onChangeInput} name='imageUrl' value={input.imageUrl} className='inputs' />
+      <input type="text" placeholder='email'onChange={onChangeInput} name='email' value={input.email} className='inputs' />
       <button
                         className="btn-1 btn"
                         onClick={onSubmitHandler}

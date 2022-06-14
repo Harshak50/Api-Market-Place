@@ -20,11 +20,14 @@ function LoginForm() {
     password: "",
     error: false,
   });
+
   const onChangeHandler = (event) => {
     const name = event.target.name;
     const value = event.target.value;
     setUser({ ...user, [name]: value });
   };
+
+
   const loginHandler = async (event) => {
     event.preventDefault();
     if (user.email !== "" || user.password !== "") {
@@ -45,6 +48,7 @@ function LoginForm() {
           },
           config
         );
+        setLoading(false);
         console.log(data.token);
         if (data.auth === true) {
           if ("token" in data) {
@@ -53,7 +57,6 @@ function LoginForm() {
           }
           navigate("/home");
         }
-        setLoading(false);
         setUser({ loading: false });
         if (data.auth === false) {
           alert(data.message);
