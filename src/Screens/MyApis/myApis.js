@@ -7,7 +7,7 @@ function MyApis() {
   const[cards,setCards] = useState([])
   useEffect(()=>{
     const fetchData = async () =>{
-     const data = await axios.get("https://authjwtexpress.herokuapp.com/apis/myApis/",{params:{"email":"kondapuramharsha@gmail.com"}});
+     const data = await axios.get("https://authjwtexpress.herokuapp.com/apis/myApis/",{params:{"email":localStorage.getItem('userInfo')}});
       console.log(data.data)
       setCards(data.data);
     }
